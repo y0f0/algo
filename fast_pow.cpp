@@ -1,6 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-long long fast_pow(long long x, long long p, long long MOD) {
+long long fast_pow(long long x, long long p, long long MOD) { //x ^ n % MOD
     long long res = 1;
     while(p > 0) {
 
@@ -12,10 +10,3 @@ long long fast_pow(long long x, long long p, long long MOD) {
     }
     return res;
 }
-int main() {
-    int x, n, p;
-    cin >> x >> n >> p;
-    cout << fast_pow(x, n, p);
-    return 0;
-}
-
